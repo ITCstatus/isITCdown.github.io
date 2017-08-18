@@ -27,7 +27,7 @@ var kimcartoonCheck = new RegExp("^/kc$");
 var kissanimeCheck = new RegExp("^/ka$");
 
 
-window.redditURL = "https://reddit.com";
+window.redditURL = "https://reddit.com/";
 window.githubURL = "https://github.com";
 window.fbURL = "https://facebook.com";
 window.vURL = "https://4chan.org/v/";
@@ -73,7 +73,7 @@ function textSubmit() {
 
 
   if (goToReddit){
-    /*window.urlToVisit = redditURL.concat(inputBoxText);*/
+    window.urlToVisit = redditURL.concat(inputBoxText);
     document.location.replace(window.urlToVisit);
     return false;
       } else if (goToYoutube){

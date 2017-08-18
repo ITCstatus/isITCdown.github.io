@@ -7,7 +7,7 @@
 window.urlToVisit = "";
 
 
-var redditCheck = new RegExp("^/r/");
+var redditCheck = new RegExp("^/r");
 var githubCheck = new RegExp("^/git$");
 var fbCheck = new RegExp("^/fb$");
 var vCheck = new RegExp("^/v/$");
@@ -73,7 +73,7 @@ function textSubmit() {
 
 
   if (goToReddit){
-    window.urlToVisit = redditURL.concat(inputBoxText);
+    /*window.urlToVisit = redditURL.concat(inputBoxText);*/
     document.location.replace(window.urlToVisit);
     return false;
       } else if (goToYoutube){

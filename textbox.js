@@ -7,7 +7,7 @@
 window.urlToVisit = "";
 
 
-var redditCheck = new RegExp("^/r");
+var redditCheck = new RegExp("^/r$");
 var githubCheck = new RegExp("^/git$");
 var fbCheck = new RegExp("^/fb$");
 var vCheck = new RegExp("^/v/$");
@@ -72,14 +72,11 @@ function textSubmit() {
   var goToKissanime = kissanimeCheck.test(inputBoxText);
 
 
-  if (goToReddit){
-    window.urlToVisit = redditURL.concat(inputBoxText);
-    document.location.replace(window.urlToVisit);
-    return false;
-      } else if (goToYoutube){
+  if (goToYoutube){
     var searchQueryText = inputBoxText.substr(4);
     window.urlToVisit = youtubeURL.concat(searchQueryText);
     document.location.replace(window.urlToVisit);
+    return false;
       } else if (goToGithub){
     document.location.replace(githubURL);
     return false;
@@ -122,6 +119,9 @@ function textSubmit() {
       } else if (goToKissanime){
     document.location.replace(kissanimeURL);
     return false;
+      } else if (goToReddit){
+    window.urlToVisit = redditURL.concat(inputBoxText);
+    document.location.replace(redditURL);
       } else {
     window.urlToVisit = googleURL.concat(inputBoxText);
     document.location.replace(window.urlToVisit);

@@ -122,7 +122,7 @@ function textSubmit() {
       } else if (goToKissanime){
     document.location.replace(kissanimeURL);
     return false;
-        else if (goToGmail){
+      } else if (goToGmail){
     document.location.replace(gmailURL);
     return false;
       } else if (goToReddit){

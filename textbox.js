@@ -25,6 +25,7 @@ var netflixCheck = new RegExp("^/flix$");
 var wellsfargoCheck = new RegExp("^/wf$");
 var kimcartoonCheck = new RegExp("^/kc$");
 var kissanimeCheck = new RegExp("^/ka$");
+var gmailCheck = new RegExp("^/gmail$");
 
 
 window.redditURL = "https://reddit.com/";
@@ -45,6 +46,7 @@ window.netflixURL = "https://netflix.com";
 window.wellsfargoURL = "https://wellsfargo.com";
 window.kimcartoonURL = "https://kimcartoon.me";
 window.kissanimeURL = "https://kissanime.ru";
+window.gmailURL = "https://gmail.com";
 
 
 function textSubmit() {
@@ -70,6 +72,7 @@ function textSubmit() {
   var goToWellsfargo = wellsfargoCheck.test(inputBoxText);
   var goToKimcartoon = kimcartoonCheck.test(inputBoxText);
   var goToKissanime = kissanimeCheck.test(inputBoxText);
+  var goToGmail = gmailCheck.test(inputBoxText);
 
 
   if (goToYoutube){
@@ -119,6 +122,9 @@ function textSubmit() {
       } else if (goToKissanime){
     document.location.replace(kissanimeURL);
     return false;
+        else if (goToGmail){
+    document.location.replace(gmailURL);
+    return false;
       } else if (goToReddit){
     window.urlToVisit = redditURL.concat(inputBoxText);
     document.location.replace(redditURL);
@@ -148,7 +154,6 @@ var goToApex = apexCheck.test(inputBoxText);
 var goToVoip = voipCheck.test(inputBoxText);
 var goToYoutube = youtubeCheck.test(inputBoxText);
 var goToB = bCheck.test(inputBoxText);
-
 
 
 

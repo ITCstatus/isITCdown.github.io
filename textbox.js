@@ -9,42 +9,42 @@ window.urlToVisit = "";
 
 var redditCheck = new RegExp("^/r/");
 var githubCheck = new RegExp("^/git$");
-var amsCheck = new RegExp("^/ams$");
-var ptpCheck = new RegExp("^/ptp$");
-var redCheck = new RegExp("^/red$");
-var abtvCheck = new RegExp("^/abtv$");
-var griffithCheck = new RegExp("^/grif$");
-var whatboxCheck = new RegExp("^/what$");
-var youtubeCheck = new RegExp("^/yt/");
+var fbCheck = new RegExp("^/fb$");
+var vCheck = new RegExp("^/v/$");
+var gCheck = new RegExp("^/g/$");
+var acCheck = new RegExp("^/ac$");
+var apexCheck = new RegExp("^/apex$");
+var voipCheck = new RegExp("^/voip$");
+var youtubeCheck = new RegExp("^/yt");
 var bCheck = new RegExp("^/b/$");
 
 
-var bandcampCheck = new RegExp("^/bc$");
-var mdnCheck = new RegExp("^/mdn$");
-var w3Check = new RegExp("^/w3$");
-var codepenCheck = new RegExp("^/cpen$");
-var stackoverflowCheck = new RegExp("^/stack$");
-var btnCheck = new RegExp("^/btn$");
+var evernoteCheck = new RegExp("^/note$");
+var huluCheck = new RegExp("^/hulu$");
+var netflixCheck = new RegExp("^/flix$");
+var wellsfargoCheck = new RegExp("^/wf$");
+var kimcartoonCheck = new RegExp("^/kc$");
+var kissanimeCheck = new RegExp("^/ka$");
 
 
 window.redditURL = "https://reddit.com";
 window.githubURL = "https://github.com";
-window.amsURL = "https://ams.ausport.gov.au/asc";
-window.ptpURL = "https://passthepopcorn.me";
-window.redURL = "https://redacted.ch";
-window.abtvURL = "https://animebytes.tv";
-window.griffithURL = "https://my.griffith.edu.au";
-window.whatboxURL = "https://whatbox.ca/manage";
-window.ddgURL = "https://ddg.gg/";
-window.youtubeURL = "https://youtube.com/results?search_query=";
+window.fbURL = "https://facebook.com";
+window.vURL = "https://4chan.org/v/";
+window.gURL = "https://4chan.org/g/";
+window.acURL = "https://https://wte.accelerasolutions.com/Timesheet";
+window.apexURL = "https://myapex.apexsystemsinc.com/";
+window.voipURL = "https://maxvoice.vantageip.com";
+window.googleURL = "https://www.google.com/search?q=";
+window.youtubeURL = "https://youtube.com/";
 window.bURL = "https://boards.4chan.org/b/";
 
-window.bandcampURL = "https://bandcamp.com";
-window.mdnURL = "https://developer.mozilla.org/en-US";
-window.w3URL = "https://w3schools.com";
-window.codepenURL = "https://codepen.io";
-window.stackoverflowURL = "https://stackoverflow.com";
-window.btnURL = "https://broadcasthe.net";
+window.evernoteURL = "https://evernote.com";
+window.huluURL = "https://hulu.com";
+window.netflixURL = "https://netflix.com";
+window.wellsfargoURL = "https://wellsfargo.com";
+window.kimcartoonURL = "https://kimcartoon.me";
+window.kissanimeURL = "https://kissanime.ru";
 
 
 function textSubmit() {
@@ -54,22 +54,22 @@ function textSubmit() {
   var inputBoxText = document.getElementById("textbox").value;
   var goToReddit = redditCheck.test(inputBoxText);
   var goToGithub = githubCheck.test(inputBoxText);
-  var goToAMS = amsCheck.test(inputBoxText);
-  var goToPTP = ptpCheck.test(inputBoxText);
-  var goToRED = redCheck.test(inputBoxText);
-  var goToABTV = abtvCheck.test(inputBoxText);
-  var goToGriffith = griffithCheck.test(inputBoxText);
-  var goToWhatbox = whatboxCheck.test(inputBoxText);
+  var goToFB = fbCheck.test(inputBoxText);
+  var goToV = vCheck.test(inputBoxText);
+  var goToG = gCheck.test(inputBoxText);
+  var goToAC = acCheck.test(inputBoxText);
+  var goToApex = apexCheck.test(inputBoxText);
+  var goToVoip = voipCheck.test(inputBoxText);
   var goToYoutube = youtubeCheck.test(inputBoxText);
   var goToB = bCheck.test(inputBoxText);
 
 
-  var goToBandcamp = bandcampCheck.test(inputBoxText);
-  var goToMDN = mdnCheck.test(inputBoxText);
-  var goToW3 = w3Check.test(inputBoxText);
-  var goToCodepen = codepenCheck.test(inputBoxText);
-  var goToStackoverflow = stackoverflowCheck.test(inputBoxText);
-  var goToBTN = btnCheck.test(inputBoxText);
+  var goToEvernote = evernoteCheck.test(inputBoxText);
+  var goToHulu = huluCheck.test(inputBoxText);
+  var goToNetflix = netflixCheck.test(inputBoxText);
+  var goToWellsfargo = wellsfargoCheck.test(inputBoxText);
+  var goToKimcartoon = kimcartoonCheck.test(inputBoxText);
+  var goToKissanime = kissanimeCheck.test(inputBoxText);
 
 
   if (goToReddit){
@@ -83,47 +83,47 @@ function textSubmit() {
       } else if (goToGithub){
     document.location.replace(githubURL);
     return false;
-      } else if (goToAMS){
-    document.location.replace(amsURL);
+      } else if (goToFB){
+    document.location.replace(fbURL);
     return false;
-      } else if (goToPTP){
-    document.location.replace(ptpURL);
+      } else if (goToV){
+    document.location.replace(vURL);
     return false;
-      } else if (goToRED){
-    document.location.replace(redURL);
+      } else if (goToG){
+    document.location.replace(gURL);
     return false;
-      } else if (goToABTV){
-    document.location.replace(abtvURL);
+      } else if (goToAC){
+    document.location.replace(acURL);
     return false;
-      } else if (goToGriffith){
-    document.location.replace(griffithURL);
+      } else if (goToApex){
+    document.location.replace(apexURL);
     return false;
-      } else if (goToWhatbox){
-    document.location.replace(whatboxURL);
+      } else if (goToVoip){
+    document.location.replace(voipURL);
     return false;
       } else if (goToB){
     document.location.replace(bURL);
     return false; 
-      } else if (goToBandcamp){
-    document.location.replace(bandcampURL);
+      } else if (goToEvernote){
+    document.location.replace(evernoteURL);
     return false;
-      } else if (goToMDN){
-    document.location.replace(mdnURL);
+      } else if (goToHulu){
+    document.location.replace(huluURL);
     return false;
-      } else if (goToW3){
-    document.location.replace(w3URL);
+      } else if (goToNetflix){
+    document.location.replace(netflixURL);
     return false;
-      } else if (goToCodepen){
-    document.location.replace(codepenURL);
+      } else if (goToWellsfargo){
+    document.location.replace(wellsfargoURL);
     return false;
-      } else if (goToStackoverflow){
-    document.location.replace(stackoverflowURL);
+      } else if (goToKimcartoon){
+    document.location.replace(kimcartoonURL);
     return false;
-      } else if (goToBTN){
-    document.location.replace(btnURL);
+      } else if (goToKissanime){
+    document.location.replace(kissanimeURL);
     return false;
       } else {
-    window.urlToVisit = ddgURL.concat(inputBoxText);
+    window.urlToVisit = googleURL.concat(inputBoxText);
     document.location.replace(window.urlToVisit);
     return false;
 
@@ -140,12 +140,12 @@ function textUpdate() {
 var inputBoxText = document.getElementById("textbox").value;
 var goToReddit = redditCheck.test(inputBoxText);
 var goToGithub = githubCheck.test(inputBoxText);
-var goToAMS = amsCheck.test(inputBoxText);
-var goToPTP = ptpCheck.test(inputBoxText);
-var goToRED = redCheck.test(inputBoxText);
-var goToABTV = abtvCheck.test(inputBoxText);
-var goToGriffith = griffithCheck.test(inputBoxText);
-var goToWhatbox = whatboxCheck.test(inputBoxText);
+var goToFB = fbCheck.test(inputBoxText);
+var goToV = vCheck.test(inputBoxText);
+var goToG = gCheck.test(inputBoxText);
+var goToAC = acCheck.test(inputBoxText);
+var goToApex = apexCheck.test(inputBoxText);
+var goToVoip = voipCheck.test(inputBoxText);
 var goToYoutube = youtubeCheck.test(inputBoxText);
 var goToB = bCheck.test(inputBoxText);
 

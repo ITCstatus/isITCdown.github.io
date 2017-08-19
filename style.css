@@ -37,7 +37,7 @@ input[type="text"], textarea{
 
 #helpText {
     font-family:    'Raleway', sans-serif;
-    position:   center;
+    position:   fixed;
     bottom:     0px;
     width:      100%;
 }

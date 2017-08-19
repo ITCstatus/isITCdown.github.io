@@ -33,7 +33,7 @@ window.githubURL = "https://github.com";
 window.fbURL = "https://facebook.com";
 window.vURL = "https://4chan.org/v/";
 window.gURL = "https://4chan.org/g/";
-window.acURL = "https://https://wte.accelerasolutions.com/Timesheet";
+window.acURL = "https://wte.accelerasolutions.com/Timesheet";
 window.apexURL = "https://myapex.apexsystemsinc.com/";
 window.voipURL = "https://maxvoice.vantageip.com";
 window.googleURL = "https://www.google.com/search?q=";
